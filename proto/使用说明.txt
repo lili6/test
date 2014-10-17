@@ -1,0 +1,34 @@
+﻿15:49 2014/3/12
+
+windows环境 ：win7 64bit 
+	      Python 2.7.6+
+直接点击cmd.exe，然后输入runme,生成目标文件在..\Server和..\Client
+
+
+
+12:17 2014/3/11
+
+文件说明：
+
+1、ID_Generator.py  生成MessageId的文件包括cs和java
+
+2、Msg_Generator.py 生成Message的文件包括cs和java
+
+3、runme.bat 是删除旧文件并运行上述两个py文件生成的目标文件在..\Server和..\Client中
+直接copy到相应的路径下面即可使用。
+
+4、proto源文件存放在..\protofiles目录下面，按照模块进行划分
+
+5、每个proto文件中必须有如下描述信息(建议放到第一行)：
+//@module=login,StartIndex=10001,classname=Enroll
+格式必须一致，模块名和类名可以和文件名保持一致
+对于StartIndex 必须由项目组统一进行分段规划。
+
+6、portoc 文件是2.4.1版本，java 环境需要的jar包：protobuf-java-2.4.1.jar
+
+7、注意，C++client的话，需要引入.\protobuf-2.4.1\src 这个依赖
+
+
+//=====================当前各个.photo文件的StartIndex======================================
+
+StartIndex=10001,classname=Enroll
